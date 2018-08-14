@@ -25,6 +25,9 @@ h1, h2, h3, h4, h5, h6, ul, li, a, div, p {
 }
 a{
     cursor: pointer;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
 }
 
 .btn{
@@ -253,6 +256,7 @@ section{
             height: 160px;
             box-sizing: border-box;
             overflow: hidden;  
+            transition: all 0.4s ease-out;
             z-index: 10; 
             &.second{
                 top: 200px;
@@ -284,6 +288,7 @@ section{
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-gap: 5px;
+                transition: all 0.4s ease-out;
                 &.hidden{
                     opacity: 0;
                     visibility: hidden;
@@ -304,6 +309,7 @@ section{
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
+                transition: all 0.4s ease-out;
                 &.active{
                     width: 60%;
                     height: 300px;
@@ -528,6 +534,9 @@ section{
             transition: all 0.2s ease-out;
             font-family: @bold;
             cursor: pointer;
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
             &:hover{
                 background-color: @brown;
             }
@@ -601,13 +610,20 @@ section{
                     }
                 }
             }
-            .btn{
+            .btn_all{
                 text-transform: lowercase;
                 background: transparent;
                 border: 1px solid @brown;
                 color: @brown;
                 margin-left: 5vw;
                 margin-top: 10px;
+                padding: 10px 20px;
+                text-align: center;
+                font-family: @bold;
+                font-size: 18px;
+                border-radius: 10px;
+                transition: all 0.2s ease-out;
+                display: inline-block;
                 &:hover{
                     background-color: @brown;
                     color: #fff;
@@ -630,11 +646,10 @@ section{
         grid-gap: 10px;
         &_item{
             width: 100%;
-            cursor: pointer;
             position: relative;
-            &:hover{
-                opacity: 0.8;
-            }
+            // &:hover{
+            //     opacity: 0.8;
+            // }
         }
         &.hidden{
             display: none;
@@ -775,6 +790,39 @@ footer{
         color: #fff;
         font-size: 18px;
         margin: 10px 0;
+    }
+}
+
+.modal_container{
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    width: 300px;
+    z-index: 9999999;
+    padding: 30px 20px;
+    transform: translateX(-50%);
+    background-color: @brown;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: 0.8s ease-out;
+    &.active{
+        top: 0;
+    }
+    input{
+        font-size: 16px;
+        padding: 12px 20px;
+        margin-top: 10px;
+    }
+    .btn{
+        margin-top: 10px;
+    }
+    .arrow_up{
+        width: 40px;
+        cursor: pointer;
+        transform: rotate(180deg);
     }
 }
 

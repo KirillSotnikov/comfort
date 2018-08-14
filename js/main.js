@@ -33,3 +33,13 @@ $('.header .close').click(function() {
     $('.header .menu').removeClass('active');
     $('.header .close').removeClass('active');
 });
+
+$('.btn').click(function() {
+    $('.modal_container').addClass('active');
+});
+$('.click_more .btn').click(function() {
+    $('.modal_container').removeClass('active');
+});
+$('.modal_container .arrow_up').click(function() {
+    $('.modal_container').removeClass('active');
+});
