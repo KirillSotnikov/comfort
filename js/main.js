@@ -19,6 +19,7 @@ $('[data-tap2]').click(function() {
 $('[data-tap3]').click(function() {
     $('.about_container_card [data-tap3] img').toggleClass('active');
     $('.about_container_card.third').toggleClass('active');
+    $('.about_container_card_grid.third').toggleClass('active');
 });
 
 $('.header .menu').click(function() {
@@ -37,9 +38,25 @@ $('.header .close').click(function() {
 $('.btn').click(function() {
     $('.modal_container').addClass('active');
 });
+$('.callback').click(function() {
+    $('.modal_container').addClass('active');
+    $(this).addClass('hidden');
+});
+$('.form-more_box span').click(function() {
+    $('.modal_container').addClass('active');
+});
 $('.click_more .btn').click(function() {
     $('.modal_container').removeClass('active');
 });
 $('.modal_container .arrow_up').click(function() {
     $('.modal_container').removeClass('active');
+    $('.callback').removeClass('hidden');
 });
+
+function slowScroll (id) {
+    var offset = 0;
+    $('html, body').animate ({
+        scrollTop: $(id).offset ().top - offset
+    }, 800);
+    return false;
+};

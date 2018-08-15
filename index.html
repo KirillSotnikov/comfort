@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>ЖК Удобный</title>
+    <link rel="shortcut icon" href="img/icons/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -17,25 +18,25 @@
                     <img src="img/pictures/logo.png" alt="" class="header_logo_img">
                     <div class="header_logo_text">жк удобный</div>
                 </div>
-                <a href="#" class="header_link">характеристика ЖК</a>
-                <a href="#" class="header_link">планировки и цены</a>
-                <a href="#" class="header_link">фотогалерея</a>
+                <a href="#" onclick="slowScroll('#character')" class="header_link">характеристика ЖК</a>
+                <a href="#" onclick="slowScroll('#plans')" class="header_link">планировки и цены</a>
+                <a href="#" onclick="slowScroll('#gallery')" class="header_link">фотогалерея</a>
                 <img src="img/icons/menu.svg" alt="" class="menu">
                 <img src="img/icons/cancel.svg" alt="" class="close">
             </div>
             <div class="main">
                 <div class="main_box">
                     <p class="main_box_text">твой</p>
-                    <p class="main_box_text bold">Удобный</p>
+                    <p class="main_box_text bold">УДОБНЫЙ</p>
                     <br>
-                    <p class="main_box_text start">жилой комплекс</p>
+                    <p class="main_box_text start">жилой <b>КОМПЛЕКС</b> </p>
                 </div>
                 <div class="main_image">
                     <img src="img/pictures/26287-1456x1092.png" alt="" class="main_image_bg">
                     <div class="main_image_absolute">
                         <div class="number">
                             <img src="img/icons/smartphone-call.png" alt="">
-                            <p class="number_text">+38 (048) 789 44 50 </p>
+                            <p class="number_text">+38 (093) 088 11 22</p>
                         </div>
                         <a class="btn">заказать звонок</a>
                     </div>
@@ -43,9 +44,9 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="character">
         <div class="wrapper flex">
-            <h1 class="about_title">Жилой комплекс</h1><h1 class="about_title bold">уютный</h1>
+            <h1 class="about_title">Жилой комплекс</h1><h1 class="about_title bold">удобный</h1>
         </div>
         <div class="about" style="background: url(img/bg/2628aa6-1456x1092.png); background-position: center; background-size: cover; background-repeat: no-repeat">
             <div class="bg-overlay"></div>
@@ -63,12 +64,26 @@
                             <p class="about_container_card_grid_item bold">3</p>
                         </div>
                         <div class="about_container_card_grid hidden" id="card1" style="margin-top: 5px;">
-                            <p class="about_container_card_grid_item">класс</p>
-                            <p class="about_container_card_grid_item bold">бизнес</p>
-                            <p class="about_container_card_grid_item">домов</p>
-                            <p class="about_container_card_grid_item bold">1</p>
-                            <p class="about_container_card_grid_item">секций </p>
-                            <p class="about_container_card_grid_item bold">3</p>
+                            <p class="about_container_card_grid_item">технология строительства</p>
+                            <p class="about_container_card_grid_item bold">монолитно-каркасная</p>
+                            <p class="about_container_card_grid_item">стены</p>
+                            <p class="about_container_card_grid_item bold">газобетон</p>
+                            <p class="about_container_card_grid_item">Утепление </p>
+                            <p class="about_container_card_grid_item bold">	базальтовая вата</p>
+                            <p class="about_container_card_grid_item">Отопление </p>
+                            <p class="about_container_card_grid_item bold">автономное</p>
+                            <p class="about_container_card_grid_item">Количество квартир </p>
+                            <p class="about_container_card_grid_item bold">664</p>
+                            <p class="about_container_card_grid_item">Паркинг</p>
+                            <p class="about_container_card_grid_item bold">наземный (30 паркомест), подземный (170 паркомест)</p>
+                            <p class="about_container_card_grid_item">Этажность </p>
+                            <p class="about_container_card_grid_item bold">24</p>
+                            <p class="about_container_card_grid_item">Высота потолков </p>
+                            <p class="about_container_card_grid_item bold">	3 м</p>
+                            <p class="about_container_card_grid_item">Состояние квартиры</p>
+                            <p class="about_container_card_grid_item bold">без отделки</p>
+                            <p class="about_container_card_grid_item">Закрытая территория </p>
+                            <p class="about_container_card_grid_item bold">от авто и гостей</p>
                         </div>
                         <div class="underline"></div>
                         <div class="arrow" data-tap1>
@@ -77,7 +92,8 @@
                     </div>
                     <div class="about_container_card second">
                         <h3 class="about_container_card_title">ХОД СТРОИТЕЛЬСТВА</h3>
-                        <div class="about_container_card_image" style="background: url(img/pictures/196675.jpg)">
+                        <div class="about_container_card_image">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/U5VEr7RfVbM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                         </div>
                         <div class="underline"></div>
                         <div class="arrow" data-tap2>
@@ -85,18 +101,41 @@
                         </div>
                     </div>
                     <div class="about_container_card third">
-                        <h3 class="about_container_card_title">ПЛАНИРОВКИ</h3>
-                        <!-- <div class="about_container_card_grid">
-                            <p class="about_container_card_grid_item">класс</p>
-                            <p class="about_container_card_grid_item bold">бизнес</p>
-                            <p class="about_container_card_grid_item">домов</p>
-                            <p class="about_container_card_grid_item bold">1</p>
-                            <p class="about_container_card_grid_item">секций </p>
-                            <p class="about_container_card_grid_item bold">3</p>
-                        </div> -->
                         <div class="underline"></div>
                         <div class="arrow" data-tap3>
                             <img src="img/icons/down-arrow.svg" alt="">
+                        </div>
+                        <h3 class="about_container_card_title">ПЛАНИРОВКИ</h3>
+                        <div class="about_container_card_grid third">
+                            <img src="img/plans/2444.png" alt="" class="about_container_card_grid_item">
+                            <img src="img/plans/2445.png" alt="" class="about_container_card_grid_item">
+                            <img src="img/plans/2446.png" alt="" class="about_container_card_grid_item">
+                            <img src="img/plans/2447.png" alt="" class="about_container_card_grid_item">
+                            <img src="img/plans/2448.png" alt="" class="about_container_card_grid_item">
+                            <img src="img/plans/2449.png" alt="" class="about_container_card_grid_item">
+                            <img src="img/plans/2450.png" alt="" class="about_container_card_grid_item">
+                            <img src="img/plans/2451.png" alt="" class="about_container_card_grid_item">
+                            <img src="img/plans/2452.png" alt="" class="about_container_card_grid_item">
+                            <img src="img/plans/2460.png" alt="" class="about_container_card_grid_item">
+                            <img src="img/plans/2461.png" alt="" class="about_container_card_grid_item">
+                            <img src="img/plans/2462.png" alt="" class="about_container_card_grid_item">
+                            <img src="img/plans/2463.png" alt="" class="about_container_card_grid_item">
+                            <img src="img/plans/2464.png" alt="" class="about_container_card_grid_item">
+                            <img src="img/plans/2465.png" alt="" class="about_container_card_grid_item">
+                            <img src="img/plans/2466.png" alt="" class="about_container_card_grid_item">
+                            <img src="img/plans/2467.png" alt="" class="about_container_card_grid_item">
+                            <img src="img/plans/2468.png" alt="" class="about_container_card_grid_item">
+                            <img src="img/plans/2471.png" alt="" class="about_container_card_grid_item">
+                            <img src="img/plans/2472.png" alt="" class="about_container_card_grid_item">
+                            <img src="img/plans/2473.png" alt="" class="about_container_card_grid_item">
+                            <img src="img/plans/2474.png" alt="" class="about_container_card_grid_item">
+                            <img src="img/plans/2475.png" alt="" class="about_container_card_grid_item">
+                            <img src="img/plans/2476.png" alt="" class="about_container_card_grid_item">
+                            <img src="img/plans/2477.png" alt="" class="about_container_card_grid_item">
+                            <img src="img/plans/2478.png" alt="" class="about_container_card_grid_item">
+                            <img src="img/plans/2479.png" alt="" class="about_container_card_grid_item">
+                            <img src="img/plans/2453_2k.png" alt="" class="about_container_card_grid_item">
+                            <img src="img/plans/2480_2k.png" alt="" class="about_container_card_grid_item">
                         </div>
                     </div>
                 </div>
@@ -109,19 +148,20 @@
                 <div class="form_image">
                     <img src="img/pictures/form.png" alt="">
                 </div>
-                <div class="form_box">
+                <form method="POST" id="formx2" action="javascript:void(null);" onsubmit="call2()" class="form_box">
                     <h2 class="form_box_title">Мы поможем сделать правильный выбор!</h2>
                     <p class="form_box_desc">закажи бесплатную консультацию прямо сейчас</p>
                     <div class="input-box">
-                        <input type="text" class="input-box_item" placeholder="имя">
-                        <input type="text" class="input-box_item" placeholder="телефон">
+                        <input id="name2" name="name2" value="" type="text" class="input-box_item" placeholder="имя">
+                        <input id="phone2" name="phone2" value="" type="text" class="input-box_item" placeholder="телефон">
                     </div>
-                    <a class="form_box_btn">заказать звонок</a>
-                </div>
+                    <!-- <a class="form_box_btn">заказать звонок</a> -->
+                    <input value="заказать звонок" type="submit" class="form_box_btn">               
+                </form>
             </div>
         </div>
     </section>
-    <section>
+    <section id="plans">
         <div class="wrapper flex wrapper_offer">
             <h1 class="about_title">НАШИ ЛУЧШИЕ</h1><h1 class="about_title bold">ПРЕДЛОЖЕНИЯ</h1>
         </div>
@@ -129,7 +169,7 @@
             <div class="offer">
                 <div class="offer_card">
                     <div class="offer_card_image">
-                        <img src="img/pictures/2444.png" alt="">
+                        <img src="img/plans/2452.png" alt="">
                     </div>
                     <div class="offer_card_desc">
                         <h2>1 КОМНАТНАЯ КВАРТИРА</h2>
@@ -137,7 +177,7 @@
                         <h4>Предлагаем вашему вниманию однокомнатную квартиру, расположенную на 8 этаже Корпуса А</h4>
                         <h3>Параметры квартиры:</h3>
                         <div class="offer_card_desc_param">
-                            <p class="offer_card_desc_param_box">общая 38 M2</p>
+                            <p class="offer_card_desc_param_box">общая 41.27 M2</p>
                             <p class="offer_card_desc_param_box">жилая 20 M2</p>
                             <p class="offer_card_desc_param_box">кухня 20 M2</p>
                         </div>
@@ -145,13 +185,13 @@
                     </div>
                     <div class="offer_card_cost">
                         <h2>25.000</h2>
-                        <h3>655 у.е. m2</h3>
+                        <h3>800 у.е. m2</h3>
                         <a class="btn">заказать звонок</a>
                     </div>
                 </div>
                 <div class="offer_card">
                     <div class="offer_card_image">
-                        <img src="img/pictures/2444.png" alt="">
+                        <img src="img/plans/2460.png" alt="">
                     </div>
                     <div class="offer_card_desc">
                         <h2>1 КОМНАТНАЯ КВАРТИРА</h2>
@@ -159,7 +199,7 @@
                         <h4>Предлагаем вашему вниманию однокомнатную квартиру, расположенную на 8 этаже Корпуса А</h4>
                         <h3>Параметры квартиры:</h3>
                         <div class="offer_card_desc_param">
-                            <p class="offer_card_desc_param_box">общая 38 M2</p>
+                            <p class="offer_card_desc_param_box">общая 50.17 M2</p>
                             <p class="offer_card_desc_param_box">жилая 20 M2</p>
                             <p class="offer_card_desc_param_box">кухня 20 M2</p>
                         </div>
@@ -167,13 +207,13 @@
                     </div>
                     <div class="offer_card_cost">
                         <h2>25.000</h2>
-                        <h3>655 у.е. m2</h3>
+                        <h3>800 у.е. m2</h3>
                         <a class="btn">заказать звонок</a>
                     </div>
                 </div>
                 <div class="offer_card">
                     <div class="offer_card_image">
-                        <img src="img/pictures/2444.png" alt="">
+                        <img src="img/plans/2453_2k.png" alt="">
                     </div>
                     <div class="offer_card_desc">
                         <h2>1 КОМНАТНАЯ КВАРТИРА</h2>
@@ -181,7 +221,7 @@
                         <h4>Предлагаем вашему вниманию однокомнатную квартиру, расположенную на 8 этаже Корпуса А</h4>
                         <h3>Параметры квартиры:</h3>
                         <div class="offer_card_desc_param">
-                            <p class="offer_card_desc_param_box">общая 38 M2</p>
+                            <p class="offer_card_desc_param_box">общая 57.33 M2</p>
                             <p class="offer_card_desc_param_box">жилая 20 M2</p>
                             <p class="offer_card_desc_param_box">кухня 20 M2</p>
                         </div>
@@ -189,7 +229,7 @@
                     </div>
                     <div class="offer_card_cost">
                         <h2>25.000</h2>
-                        <h3>655 у.е. m2</h3>
+                        <h3>800 у.е. m2</h3>
                         <a class="btn">заказать звонок</a>
                     </div>
                 </div>
@@ -240,34 +280,34 @@
                             </div>
                         </div>
                     </div>
-                    <a class="btn_all">смотреть все планировки</a>
+                    <a onclick="slowScroll('#character')" class="btn_all">смотреть все планировки</a>
                 </div>
             </div>
         </div>
     </section>
-    <section>
+    <section id="gallery">
         <div class="wrapper">
             <h1 class="about_title bold">фотогалерея</h1>
             <div class="gallery">
                 <div class="gallery_container">
-                    <img src="img/pictures/26287-1456x1092.jpg" alt="" class="gallery_container_item">
-                    <img src="img/pictures/26287-1456x1092.jpg" alt="" class="gallery_container_item">
-                    <img src="img/pictures/26287-1456x1092.jpg" alt="" class="gallery_container_item">
-                    <img src="img/pictures/26287-1456x1092.jpg" alt="" class="gallery_container_item">
-                    <img src="img/pictures/26287-1456x1092.jpg" alt="" class="gallery_container_item">
-                    <img src="img/pictures/26287-1456x1092.jpg" alt="" class="gallery_container_item">
-                    <img src="img/pictures/26287-1456x1092.jpg" alt="" class="gallery_container_item">
-                    <img src="img/pictures/26287-1456x1092.jpg" alt="" class="gallery_container_item">
+                    <img src="img/pictures/gallery/26287.jpg" alt="" class="gallery_container_item">
+                    <img src="img/pictures/gallery/26285.jpg" alt="" class="gallery_container_item">
+                    <img src="img/pictures/gallery/26286.jpg" alt="" class="gallery_container_item">
+                    <img src="img/pictures/gallery/26288.jpg" alt="" class="gallery_container_item">
+                    <img src="img/pictures/gallery/26289.jpg" alt="" class="gallery_container_item">
+                    <img src="img/pictures/gallery/26290.jpg" alt="" class="gallery_container_item">
+                    <img src="img/pictures/gallery/26291.jpg" alt="" class="gallery_container_item">
+                    <img src="img/pictures/gallery/26292.jpg" alt="" class="gallery_container_item">
                 </div>
                 <div class="gallery_container hidden" id="second_gallery">
-                    <img src="img/pictures/26287-1456x1092.jpg" alt="" class="gallery_container_item">
-                    <img src="img/pictures/26287-1456x1092.jpg" alt="" class="gallery_container_item">
-                    <img src="img/pictures/26287-1456x1092.jpg" alt="" class="gallery_container_item">
-                    <img src="img/pictures/26287-1456x1092.jpg" alt="" class="gallery_container_item">
-                    <img src="img/pictures/26287-1456x1092.jpg" alt="" class="gallery_container_item">
-                    <img src="img/pictures/26287-1456x1092.jpg" alt="" class="gallery_container_item">
-                    <img src="img/pictures/26287-1456x1092.jpg" alt="" class="gallery_container_item">
-                    <img src="img/pictures/26287-1456x1092.jpg" alt="" class="gallery_container_item">
+                    <img src="img/pictures/gallery/26294.jpg" alt="" class="gallery_container_item">
+                    <img src="img/pictures/gallery/26297.jpg" alt="" class="gallery_container_item">
+                    <img src="img/pictures/gallery/26299.jpg" alt="" class="gallery_container_item">
+                    <img src="img/pictures/gallery/26301.jpg" alt="" class="gallery_container_item">
+                    <img src="img/pictures/gallery/26303.jpg" alt="" class="gallery_container_item">
+                    <!-- <img src="img/pictures/gallery/26294.jpg" alt="" class="gallery_container_item">
+                    <img src="img/pictures/gallery/26294.jpg" alt="" class="gallery_container_item">
+                    <img src="img/pictures/gallery/26294.jpg" alt="" class="gallery_container_item"> -->
                 </div>
                 <div class="click_more">
                     <div class="btn">смотреть</div>
@@ -407,7 +447,7 @@
                     <g>
                     </g>
                         </svg>
-                        <h3>(048) 704 50 24 </h3>
+                        <h3> +38 (093) 088 11 22</h3>
                     </div>
                     <div class="placeholder_container_box">
                         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -462,11 +502,15 @@
                        <g>
                        </g>
                        </svg>
-                        <h3> 7045024@gmail.com</h3>
+                        <h3> takidaxata@gmail.com</h3>
                     </div>
                 </div>
                 <div class="placeholder_map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1374.3296195282282!2d30.739679528856037!3d46.4554485620105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1534189760385" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <!-- Постройка -->
+                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d687.1415856313906!2d30.740008829225363!3d46.45728899869534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDbCsDI3JzI2LjIiTiAzMMKwNDQnMjYuMCJF!5e0!3m2!1sru!2sua!4v1534346404916" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+                    
+                    <!-- Среднефонтанская 1а -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1155.6672516850588!2d30.739733592154266!3d46.45552389698969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c633d07f38bb85%3A0xa96933bacd1cfe9e!2z0KHQtdGA0LXQtNC90YzQvtGE0L7QvdGC0LDQvdGB0YzQutC40Lkg0L_RgNC-0LLRg9C70L7QuiwgMSwg0J7QtNC10YHQsCwg0J7QtNC10YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDY1MDAw!5e0!3m2!1sru!2sua!4v1534346330683" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -531,28 +575,68 @@
                     <h1>ЖК УДОБНЫЙ</h1>
                 </div>
                 <div class="footer_container_text">
-                    <p>+38 (048)  789 44 50</p>
-                    <p>Одесса,<br> ул. Среднефонтанская, 19-г, офис, 1</p>
+                    <p>+38 (093) 088 11 22</p>
+                    <!-- <p>Одесса,<br> ул. Среднефонтанская, 19-г, офис, 1</p> -->
                 </div>
             </div>
         </div>
         <div class="grey" style="background: url(img/bg/grey3.png); background-position: center; background-size: cover; background-repeat: no-repeat"></div>
     </footer>
     <div class="mobile-menu">
-        <a href="#" class="mobile-menu_link">характеристика ЖК</a>
-        <a href="#" class="mobile-menu_link">планировки и цены</a>
-        <a href="#" class="mobile-menu_link">фотогалерея</a>
+        <a href="#" onclick="slowScroll('#character')" class="mobile-menu_link">характеристика ЖК</a>
+        <a href="#" onclick="slowScroll('#plans')" class="mobile-menu_link">планировки и цены</a>
+        <a href="#" onclick="slowScroll('#gallery')" class="mobile-menu_link">фотогалерея</a>
     </div>
-    
 
-    <div class="modal_container">
-        <input type="text" placeholder="имя">
-        <input type="text" placeholder="телефон">
-        <a class="btn">позвонить</a>
-        <img src="img/icons/down-arrow.svg" alt="" class="arrow_up">
+
+    <div class="callback">
+        <img src="img/icons/phone-call.svg" alt="">
     </div>
+
+
+    <form method="POST" id="formx" action="javascript:void(null);" onsubmit="call()" class="modal_container">
+        <input id="name" name="name" value="" type="text" placeholder="имя">
+        <input id="phone" name="phone" value="" type="text" placeholder="телефон">
+        <!-- <a class="btn">позвонить</a> -->
+        <input value="позвонить" type="submit" class="btn" style="border-color: transparent;">
+        <img src="img/icons/down-arrow.svg" alt="" class="arrow_up">
+    </form>
 
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" language="javascript">
+        function call() {
+            var msg   = $('#formx').serialize();
+            $.ajax({
+                type: 'POST',
+                url: 'send.php',
+                data: msg,
+            success: function(data) {
+                alert('Done');
+                // Тут можно скрывать форму и показывать надпись “спасибо”
+            },
+            error:  function(xhr, str){
+                alert('Failed');
+                // Если форма не отправлена (error срабатывает только при ошибки отпарвки, а не пустых полей!)
+            }
+            });
+        };
+        function call2() {
+            var msg   = $('#formx2').serialize();
+            $.ajax({
+                type: 'POST',
+                url: 'send.php',
+                data: msg,
+            success: function(data) {
+                alert('Done');
+                // Тут можно скрывать форму и показывать надпись “спасибо”
+            },
+            error:  function(xhr, str){
+                alert('Failed');
+                // Если форма не отправлена (error срабатывает только при ошибки отпарвки, а не пустых полей!)
+            }
+            });
+        }
+    </script>
     <script src="js/main.js"></script>
 </body>
 </html>
