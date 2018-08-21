@@ -44,6 +44,7 @@ $('.callback').click(function() {
 });
 $('.form-more_box span').click(function() {
     $('.modal_container').addClass('active');
+    $('.name_modal').val($('.form-more_input').val());
 });
 $('.click_more .btn').click(function() {
     $('.modal_container').removeClass('active');
@@ -51,6 +52,24 @@ $('.click_more .btn').click(function() {
 $('.modal_container .arrow_up').click(function() {
     $('.modal_container').removeClass('active');
     $('.callback').removeClass('hidden');
+});
+$('.btn_all').click(function() {
+    $('.modal_gallery').addClass('active');
+});
+$('.close_modal').click(function() {
+    $('.modal_gallery').removeClass('active');
+});
+
+$('[data-slide]').click(function() {
+    var target = $(this).attr('data-slide');
+
+    $('.plan-modal').addClass('active');
+    $('.plan-modal_image').removeClass('active');
+    $('.plan-modal_image' + target).addClass('active');
+});
+
+$('.plan-modal .close').click(function() {
+    $('.plan-modal').removeClass('active');
 });
 
 function slowScroll (id) {
@@ -60,3 +79,11 @@ function slowScroll (id) {
     }, 800);
     return false;
 };
+
+$('.modal_gallery_container').slick({
+    dots: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    prevArrow: '<div class="arrow left"><img src="img/icons/left-arrow.svg"></div>',
+    nextArrow: '<div class="arrow right"><img src="img/icons/right-arrow.svg"></div>',
+});
